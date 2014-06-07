@@ -5,20 +5,24 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
+    @time=Time.now
   end
 
   # GET /products/1
   # GET /products/1.json
   def show
+    @time=Time.now
   end
 
   # GET /products/new
   def new
     @product = Product.new
+    @time=Time.now
   end
 
   # GET /products/1/edit
   def edit
+    @time=Time.now
   end
 
   # POST /products

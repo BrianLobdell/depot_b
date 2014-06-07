@@ -17,10 +17,12 @@
 	<div id="columns">
 		<div id="side">
 			<ul>
-				<li><a href="#">Home</a></li>
+				<li><%= link_to 'Home', store_index_path  %></li>
 				<li><a href="#">Questions</a></li>
 				<li><a href="#">News</a></li>
 				<li><a href="#">Contact</a></li>
+				<br>
+				<li>You visited the site at <%= @time %> </li>
 			</ul>
 		</div> <!--#side-->
 		<div id ="main">
